@@ -16,10 +16,11 @@ namespace ComparisonOfLines
             this.y1 = y1;
             this.y2 = y2;
         }
-        public void CalculatingLength()
+        public double CalculatingLength()
         {
             double result = Math.Sqrt((x2 - x1)^2 + (y2 -y1)^2);
             Console.WriteLine("Length Of The Line is {0} :" ,result);
+            return result;
         }
     }
 }
